@@ -5,9 +5,12 @@ import './App.css';
 
 
 class App extends Component {
+  // Define the initial state with advice, images, and bgImageIndex
   state = { advice: '', images: [], bgImageIndex: 0 };
 
+  // Component lifecycle method - componentDidMount
   componentDidMount() {
+    // Call the fetchAdvice method when the component mounts
     this.fetchAdvice();
   }
 
